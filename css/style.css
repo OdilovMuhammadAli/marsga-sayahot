@@ -3,9 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  margin: 0;
-  padding: 0;
   height: 100vh;
   background-image: url("../images/s.jpg");
   background-size: cover;
@@ -19,16 +18,76 @@ body {
 }
 
 .content {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 30px;
+  background-color: rgba(39, 1, 255, 0.505);
+  padding: 40px;
   border-radius: 15px;
+  max-width: 600px;
+  width: 100%;
 }
 
-.text {
-  gap: 20px;
-  display: block;
-  max-width: 100%;
-  width: 337px;
-  height: 90px;
-  margin: 10px;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="month"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: rgba(255, 6, 6, 0.1);
+  color: white;
+}
+
+textarea.text {
+  resize: vertical;
+  height: 80px;
+}
+/* select  */
+select {
+  background: rgba(221, 15, 15, 0.365);
+  color: white;
+}
+/* input-reset-submit  */
+input[type="submit"],
+input[type="reset"] {
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+/* reset  */
+input[type="reset"] {
+  background-color: #f44336;
+}
+/* submit  */
+input[type="submit"]:hover {
+  background-color: #00ff0d;
+}
+
+input[type="reset"]:hover {
+  background-color: #d32f2f;
+}
+
+fieldset {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+legend {
+  padding: 0 10px;
+  font-weight: bold;
 }

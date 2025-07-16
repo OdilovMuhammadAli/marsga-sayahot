@@ -1,131 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marsga-Sayohat</title>
+    <title>Marsga Sayohat</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <form>
-      <input type="text" placeholder="Ism-Familya" />
-      <input type="number" placeholder="Yosh" />
-      <input type="date" placeholder="Tugilgan-sana" />
-      <input type="month" placeholder="qachon-uchasiz?!" />
-      <input type="submit" />
-      <input type="reset" />
-      <textarea class="text" placeholder="Nega-uchyaps?"></textarea>
-      <select class="test">
-        <option>Marsga-oldinham-uchganmisiz?</option>
-        <option>ha</option>
-        <option>yoq</option>
-      </select>
-      <select class="test">
-        <option>Budjet!?</option>
-        <option>4000$</option>
-        <option>2000$</option>
-        <option>endi kredit olaman!</option>
-      </select>
-      <select class="test">
-        <option>Budjet!?</option>
-        <option>4000$</option>
-        <option>2000$</option>
-        <option>endi kredit olaman!</option>
-      </select>
-      <select class="test">
-        <option>Qachoon-uchas</option>
-        <option>4-Avgust</option>
-        <option>Xuda-xoxlasa-uchamiz</option>
-        <option>2040-yil</option>
-        <option>2080-yilda</option>
-        <option>Bilmiman</option>
-      </select>
-      <select class="test">
-        <option>Qachoon-uchas</option>
-        <option>4-Avgust</option>
-        <option>Xuda-xoxlasa-uchamiz</option>
-        <option>2040-yil</option>
-        <option>2080-yilda</option>
-        <option>Bilmiman</option>
-      </select>
-      <select class="test">
-        <option>Qachoon-uchas</option>
-        <option>4-Avgust</option>
-        <option>Xuda-xoxlasa-uchamiz</option>
-        <option>2040-yil</option>
-        <option>2080-yilda</option>
-        <option>Bilmiman</option>
-      </select>
-      <select class="test">
-        <option>Qachoon-uchas</option>
-        <option>4-Avgust</option>
-        <option>Xuda-xoxlasa-uchamiz</option>
-        <option>2040-yil</option>
-        <option>2080-yilda</option>
-        <option>Bilmiman</option>
-      </select>
-      <input type="radio" placeholder="kim-bilan-uchon" />
-      <select class="test">
-        <option>kim-bilan-uchas</option>
-        <option>ortogim</option>
-        <option>Bilmiman</option>
-        <option>Ozim</option>
-        <option>Onam</option>
-        <option>Ukam</option>
-      </select>
-      <select class="test">
-        <option>Qachoon-uchas</option>
-        <option>4-Avgust</option>
-        <option>Xuda-xoxlasa-uchamiz</option>
-        <option>2040-yil</option>
-        <option>2080-yilda</option>
-        <option>Bilmiman</option>
-      </select>
-      <select class="test">
-        <option>Qaysi-Viloyatda-tugilgansiz</option>
-        <option>Sirdaryo</option>
-        <option>Navoiy</option>
-        <option>Jizzax</option>
-        <option>Xarazm</option>
-        <option>Buxaro</option>
-        <option>Surhandaryo</option>
-        <option>Namangan</option>
-        <option>Andijon</option>
-        <option>Qashqadaryo</option>
-        <option>Samarqand</option>
-        <option>Farg'ona</option>
-        <option>Toshkent</option>
-      </select>
-      <select>
-        <option>Qaysi-shaharda-tugilgansiz?</option>
-        <option>Toshkent</option>
-        <option>Samarqand</option>
-        <option>Buxaro</option>
-        <option>Xiva</option>
-        <option>Andijon</option>
-        <option>Farg'ona</option>
-        <option>Qoqon</option>
-        <option>Namangan</option>
-        <option>Navoiy</option>
-        <option>Jizzax</option>
-        <option>Qarshi</option>
-        <option>Termez</option>
-        <option>Mukus</option>
-        <option>Shahrisabz</option>
-        <option>Guliston</option>
-      </select>
-      <select class="test">
-        <option>Hobby</option>
-        <option>Gitara-cholish</option>
-        <option>Rasm-chizish</option>
-        <option>Kitob-oqish</option>
-        <option>Sport</option>
-        <option>Aynalish</option>
-        <option>Shaxmat</option>
-        <option>Chizma</option>
-        <option>MArsga-uchish:></option>
-        <option></option>
-      </select>
+    <form action="https://echo.htmlacademy.ru/">
+      <fieldset>
+        <legend>Shaxsiy Malumotlar</legend>
+
+        <input type="text" name="fullname" placeholder="Ism-Familya" required />
+        <input type="number" name="age" placeholder="Yosh" required />
+        <input type="date" name="birthdate" />
+        <input
+          type="month"
+          name="flight_month"
+          placeholder="Qachon uchasiz?!"
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>Sayohat Tafsilotlari</legend>
+
+        <textarea name="reason" placeholder="Nega uchyapsiz?"></textarea>
+
+        <label>
+          Marsga oldin ham uchganmisiz?
+          <select name="previous_flight">
+            <option value="">Tanlang</option>
+            <option value="ha">Ha</option>
+            <option value="yoq">Yoq</option>
+          </select>
+        </label>
+
+        <label>
+          Budjet?
+          <select name="budget">
+            <option value="">Tanlang</option>
+            <option value="4000">$4000</option>
+            <option value="2000">$2000</option>
+            <option value="kredit">Endi kredit olaman!</option>
+          </select>
+        </label>
+
+        <label>
+          Qachon uchasiz?
+          <select name="flight_date">
+            <option value="">Tanlang</option>
+            <option>4-Avgust</option>
+            <option>Xudo xohlasa uchamiz</option>
+            <option>2040-yil</option>
+            <option>2080-yilda</option>
+            <option>Bilmiman</option>
+          </select>
+        </label>
+
+        <label>
+          Kim bilan uchasiz?
+          <select name="with_whom">
+            <option value="">Tanlang</option>
+            <option>O'zim</option>
+            <option>Onam</option>
+            <option>Ukam</option>
+            <option>Do‘stim</option>
+            <option>Bilmiman</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Qo‘shimcha Ma’lumotlar</legend>
+
+        <label>
+          Viloyat:
+          <select name="region">
+            <option value="">Tanlang</option>
+            <option>Sirdaryo</option>
+            <option>Navoiy</option>
+            <option>Jizzax</option>
+            <option>Xorazm</option>
+            <option>Buxoro</option>
+            <option>Surxondaryo</option>
+            <option>Namangan</option>
+            <option>Andijon</option>
+            <option>Qashqadaryo</option>
+            <option>Samarqand</option>
+            <option>Farg'ona</option>
+            <option>Toshkent</option>
+          </select>
+        </label>
+
+        <label>
+          Shahar:
+          <select name="city">
+            <option value="">Tanlang</option>
+            <option>Toshkent</option>
+            <option>Samarqand</option>
+            <option>Buxoro</option>
+            <option>Xiva</option>
+            <option>Andijon</option>
+            <option>Farg'ona</option>
+            <option>Qoqon</option>
+            <option>Namangan</option>
+            <option>Navoiy</option>
+            <option>Jizzax</option>
+            <option>Qarshi</option>
+            <option>Termiz</option>
+            <option>Mukus</option>
+            <option>Shahrisabz</option>
+            <option>Guliston</option>
+          </select>
+        </label>
+
+        <label>
+          Hobby:
+          <select name="hobby">
+            <option value="">Tanlang</option>
+            <option>Gitara chalish</option>
+            <option>Rasm chizish</option>
+            <option>Kitob o‘qish</option>
+            <option>Sport</option>
+            <option>Sayr qilish</option>
+            <option>Shaxmat</option>
+            <option>Chizma</option>
+            <option>Marsga uchish</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <div>
+        <input type="submit" value="Yuborish" />
+        <input type="reset" value="Tozalash" />
+      </div>
     </form>
   </body>
 </html>
