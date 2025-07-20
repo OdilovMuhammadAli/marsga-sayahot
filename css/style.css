@@ -100,3 +100,23 @@ legend {
   font-size: 1.2em;
   color: white;
 }
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+}
