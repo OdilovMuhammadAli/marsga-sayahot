@@ -100,4 +100,6 @@ legend {
   font-size: 1.2em;
   color: white;
 }
-
+ .form-group {
+  margin-bottom: 45px;
+}
